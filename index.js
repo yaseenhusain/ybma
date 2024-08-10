@@ -209,6 +209,7 @@ async function main() {
   await mongoose.connect(process.env.MONGODB_URL);
   console.log('database connected');
 }
+ // app.use("/uploads",express.static("./uploads"));
 
 server.listen(process.env.PORT, () => {
   console.log('server started');

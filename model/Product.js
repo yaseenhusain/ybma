@@ -18,6 +18,10 @@ const productSchema = new Schema({
     highlights:{ type : [String] },
     discountPrice: { type: Number},
     deleted: { type : Boolean, default: false},
+   
+    date:{
+        type:Date
+    }
 })
 
 const virtualId  = productSchema.virtual('id');
